@@ -141,6 +141,9 @@ class JasperPHP
 
         }
 
+        
+        $command .= " --out-field-del \"`\"";
+
         $this->redirect_output  = $redirect_output;
         $this->background       = $background;
         $this->the_command      = escapeshellcmd($command);
